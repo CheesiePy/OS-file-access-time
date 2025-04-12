@@ -7,6 +7,9 @@
 
 ---
 
+Auther: May Lindenberg \
+ID: 203132949
+
 ## 🚀 Overview
 
 This C project measures and compares the performance of **sequential** and **random** block reads from a file.  
