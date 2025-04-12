@@ -60,5 +60,6 @@ int main() {
     }
 
     printf("\n===== All tests completed successfully =====\n");
+    remove("testfile.txt"); // Clean up the test file
     return 0;
 }
