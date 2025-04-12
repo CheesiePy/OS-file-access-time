@@ -1,8 +1,5 @@
-Absolutely! Here's a polished `README.md` with a modern look, emojis for clarity, and structured sections that would look great on GitHub:
 
----
 
-```markdown
 <h1 align="center">📂 File Access Time Benchmark</h1>
 <p align="center">
   <i>Compare sequential vs random access performance using low-level Unix system calls in C</i>
@@ -20,7 +17,7 @@ It simulates disk access patterns using system-level calls (`open`, `read`, `lse
 ## 🧰 Features
 
 - 🔧 **Low-level I/O:** Uses raw Unix system calls (`open`, `write`, `lseek`, etc.)
-- 📏 **Fixed block size (512 bytes)**
+- 📏 **Fixed block size (512 bytes) [dynamic version in work]** 
 - ⏱️ **High-resolution timing** with `gettimeofday()`
 - 📈 **Benchmark automation** with `test_runner.c`
 - 📊 **Averages across multiple runs** for accuracy
@@ -33,8 +30,8 @@ It simulates disk access patterns using system-level calls (`open`, `read`, `lse
 ```bash
 .
 ├── main.c           # Main program: writes and reads a file sequentially and randomly
-├── test_runner.c    # Automated tester: averages read times for various file sizes
-├── testfile.txt     # Temporary file created during benchmarking
+├── test_runner.c    # Automated tester: averages over 5 runs for each file size
+during benchmarking
 ├── main             # Compiled binary for main.c
 ├── test_runner      # Compiled binary for test_runner.c
 ├── README.md        # Project documentation (you are here!)
